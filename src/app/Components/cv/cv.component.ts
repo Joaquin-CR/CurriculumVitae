@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faWhatsapp, faTelegram, faLinkedin, faGoogle, faWhatsappSquare} from '@fortawesome/free-brands-svg-icons'
-//import { fa } from '@fortawesome/free-regular-svg-icons';
+import { faContactCard } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-cv',
@@ -14,6 +14,7 @@ export class CVComponent implements OnInit
   faTelegram = faTelegram;
   faLinkedin = faLinkedin;
   faGoogle = faGoogle;
+  faContactCard = faContactCard;
   faWhatsappSquare = faWhatsappSquare;
 
   constructor() 
