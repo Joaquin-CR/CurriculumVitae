@@ -6,16 +6,16 @@ import { CVComponent } from './Components/cv/cv.component';
 const routes: Routes = [
   {
     path: '', 
-    redirectTo: 'CV',
+    redirectTo: 'CVJoaquin',
     pathMatch: 'full'
   },
   {
-    path: 'CV',
+    path: 'CVJoaquin',
     component: CVComponent
   },
   {
     path: '***',
-    redirectTo: 'CV',
+    redirectTo: 'CVJoaquin',
     pathMatch: 'full'
   }
 ];
