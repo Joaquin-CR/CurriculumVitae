@@ -8,13 +8,17 @@ import { CVComponent } from './Components/cv/cv.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExperienciaLaboralComponent } from './Components/experiencia-laboral/experiencia-laboral.component';
 import { HistorialAcademicoComponent } from './Components/historial-academico/historial-academico.component';
+import { HobbiesComponent } from './Components/hobbies/hobbies.component';
+import { ConocimientosComponent } from './Components/conocimientos/conocimientos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CVComponent,
     ExperienciaLaboralComponent,
-    HistorialAcademicoComponent
+    HistorialAcademicoComponent,
+    HobbiesComponent,
+    ConocimientosComponent
   ],
   imports: [
     BrowserModule,
