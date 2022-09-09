@@ -6,11 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CVComponent } from './Components/cv/cv.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExperienciaLaboralComponent } from './Components/experiencia-laboral/experiencia-laboral.component';
+import { HistorialAcademicoComponent } from './Components/historial-academico/historial-academico.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CVComponent
+    CVComponent,
+    ExperienciaLaboralComponent,
+    HistorialAcademicoComponent
   ],
   imports: [
     BrowserModule,
