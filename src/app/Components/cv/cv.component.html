@@ -1,27 +1,37 @@
 <div class="container my-5">
-    <div id="cardPresentacion" class="card" style="width: 100%;">
-        <img src="assets/Img/IndividualImg.jpg" class="card-img rounded float-start" style="width: 30%;">
-        <div class="card-body">
-            <h5 class="card-title">Joaquin Carreño Rodríguez</h5>
-            <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-            </p>
-
-            <h6>Contacto <fa-icon [icon]="faContactCard"></fa-icon></h6>
-
-            <button class="btn btn-outline-dark"><fa-icon [icon]="faGithub"></fa-icon></button> 
-
-            <button class="btn btn-outline-primary"><fa-icon [icon]="faTelegram"></fa-icon></button>
-            <!-- https://t.me/Joaquin_CR -->
-
-            <button class="btn btn-outline-dark"><fa-icon [icon]="faLinkedin"></fa-icon></button> 
-            <!-- https://www.linkedin.com/in/joaquin-carre%C3%B1o-rodriguez-52bbb320b -->
-
-            <button class="btn btn-outline-danger"><fa-icon [icon]="faGoogle"> joaquin.carrdr@gmail.com</fa-icon></button>
-
-            <button class="btn btn-outline-success" ><fa-icon [icon]="faWhatsappSquare"></fa-icon></button>
-            <!-- https://wa.me/522228634123 -->
+    <div class="row">
+        <div class="col">
+            <div id="cardPresentacion" class="card" style="width: 100%;">
+                <img src="assets/Img/IndividualImg.jpg" class="card-img rounded float-start" style="width: 30%;">
+                <div class="card-body">
+                    <h5 class="card-title">JOAQUIN CARREÑO RODRÍGUEZ</h5>
+                    <p class="card-text">
+                        INGENIERO EN TECNOLOGÍA DE SOFTWARE
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Contacto <fa-icon [icon]="faContactCard"></fa-icon></h5>
+                </div>
+                <button class="btn btn-outline-dark">
+                    <fa-icon [icon]="faGithub"></fa-icon>
+                </button>
+                <button class="btn btn-outline-primary" (click)="goToLigas('telegram')">
+                    <fa-icon [icon]="faTelegram"></fa-icon>
+                </button>
+                <button class="btn btn-outline-dark" (click)="goToLigas('linkedin')">
+                    <fa-icon [icon]="faLinkedin"></fa-icon>
+                </button>
+                <button class="btn btn-outline-danger">
+                    <fa-icon [icon]="faGoogle"> joaquin.carrdr@gmail.com</fa-icon>
+                </button>
+                <button class="btn btn-outline-success" (click)="goToLigas('whatsapp')">
+                    <fa-icon [icon]="faWhatsappSquare"></fa-icon>
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -61,14 +71,16 @@
         </div>
     </div>
     <div class="row my-5">
-        <div class="card">
-            <div class="card-header">
-                <h5 class="card-title">Hobbies</h5>
-            </div>
-            <div class="card-body">
-                <app-hobbies></app-hobbies>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Hobbies</h5>
+                </div>
+                <div class="card-body">
+                    <app-hobbies></app-hobbies>
+                </div>
             </div>
         </div>
     </div>
-    
+
 </div>
